@@ -217,6 +217,11 @@ export class Theme implements ObTheme {
     color_2: '#5433ff',
     color_3: '#ff0099'
   }
+  sidebar = {
+    profile: true,
+    recent_comment: false,
+    tag_box: true
+  }
   header_gradient_css =
     'linear-gradient(130deg, #24c6dc, #5433ff 41.07%, #ff0099 76.05%)'
   background_gradient_style = {

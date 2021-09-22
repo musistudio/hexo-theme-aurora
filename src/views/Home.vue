@@ -77,9 +77,9 @@
       </div>
       <div>
         <Sidebar>
-          <Profile :author="mainAuthor" />
-          <RecentComment />
-          <TagBox />
+          <Profile v-if="themeConfig.theme.sidebar.profile" :author="mainAuthor"/>
+          <RecentComment v-if="themeConfig.theme.sidebar.recent_comment"/>
+          <TagBox v-if="themeConfig.theme.sidebar.recent_comment"/>
         </Sidebar>
       </div>
     </div>
